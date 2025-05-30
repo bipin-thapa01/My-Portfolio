@@ -1,0 +1,28 @@
+#homepage-container{
+  position: relative;
+}
+
+#homepage-image{
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+#container{
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+}
+
+#name-container{
+  font-size: 64px;
+  font-weight: 700;
+}
+
+#typing{
+  font-size: 26px;
+}
