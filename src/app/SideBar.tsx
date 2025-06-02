@@ -4,6 +4,12 @@ import { useRouter } from "next/navigation";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { MdHome } from "react-icons/md";
+import { IoMdPerson } from "react-icons/io";
+import { LuNewspaper } from "react-icons/lu";
+import { FaRegImages } from "react-icons/fa6";
+import { CiServer } from "react-icons/ci";
+import { MdOutlineMailOutline } from "react-icons/md";
 import "./SideBar.css";
 
 export default function SideBar() {
@@ -30,13 +36,13 @@ export default function SideBar() {
           <FaLinkedin className="logo"/>
         </div>
       </div>
-      <div>
-        <div>Home</div>
-        <div>About</div>
-        <div>Resume</div>
-        <div>Portfolio</div>
-        <div>Services</div>
-        <div>Contact</div>
+      <div id="nav-options-container">
+        <i> <MdHome /> Home</i>
+        <i> <IoMdPerson /> About</i>
+        <i> <LuNewspaper /> Resume</i>
+        <i> <FaRegImages /> Portfolio</i>
+        <i> <CiServer /> Services</i>
+        <i> <MdOutlineMailOutline /> Contact</i>
       </div>
     </div>
   );
