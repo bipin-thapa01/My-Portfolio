@@ -5,7 +5,7 @@
   color: white;
   background-color: #040b14;
   padding: 0px 15px;
-  position: absolute;
+  position: fixed;
   z-index: 997;
 }
 
@@ -74,4 +74,6 @@
 #nav-options-container i{
   padding: 15px 10px;
   font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
 }

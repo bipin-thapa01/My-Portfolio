@@ -26,3 +26,60 @@
 #typing{
   font-size: 26px;
 }
+
+/*about page starts from here*/
+#about-page{
+  padding: 60px 0;
+  margin-left: 300px;
+}
+
+#about-page-intro{
+  padding-left: 20px;
+}
+
+#about-page-intro-head{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#about-page-intro-head::before{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: #149ddd;
+}
+
+#about-page-body{
+  display: flex;
+  margin-top: 24px;
+  column-gap: 10px;
+}
+
+#about-page-body-image-container{
+  padding: 0 12px;
+  width: 33.33%;
+}
+
+#about-page-body-image{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+#about-page-body-content-header{
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+#about-page-body-content-1{
+  padding: 16px 0;
+  margin-bottom: 16px;
+  font-style: italic;
+}
