@@ -83,3 +83,30 @@
   margin-bottom: 16px;
   font-style: italic;
 }
+
+#about-page-body-content-2{
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-page-body-content-2-1, #about-page-body-content-2-2{
+  padding: 0px 12px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.about-page-details{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#list-content-title{
+  margin-right: 10px;
+  font-weight: bolder;
+}
+
+#about-page-body-content-3{
+  padding: 16px 10px 0 0;
+  margin-bottom: 16px;
+}
