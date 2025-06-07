@@ -57,9 +57,6 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <div id="project-lists">
-
-      </div>
     </div>
   );
 }
