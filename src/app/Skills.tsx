@@ -1,13 +1,43 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import "./Skills.css";
 
 export default function Skills(){
-  let skillCount = 6;
-  for(let i=1; i<=6; i++){
-    let percent = document.getElementById(`skill-${i}-head-percent`);
-    document.getElementById(`color-bar-${i}`).style.width = `${parseInt(percent)}%`;
-  }
+  const [skills, setSkills] = useState({});
+  const [skillsArray, setSkillsArray] = useState<[string, string][]>([]);
+
+  useEffect(() => {
+    const updatedSkills = {
+      JavaScript: "80%",
+      Python: "50%",
+      NODE: "80%",
+      PANDAS: "30%",
+      REACT: "80%",
+      JAVA: "30%",
+    };
+
+    setSkills(updatedSkills);
+    setSkillsArray(Object.entries(updatedSkills));
+  }, []);
+
+  let skillsHtml = skillsArray.map((el,i)=>{
+    return(
+      <div id={`skill-${i+1}`} className={'skill'}>
+        <div id={`skill-${i+1}-head`} className="skill-head">
+          <div id={`skill-${i+1}-head-title`}>
+            {el[0]}
+          </div>
+          <div id={`skill-${i+1}-head-percent`}>
+            {el[1]}
+          </div>
+        </div>
+        <div className="bar">
+          <div className="color-bar" style={{width: el[1], backgroundColor: '#149ddd'}}></div>
+        </div>
+      </div>
+    );
+  })
 
   return(
     <div id="skills-container">
@@ -18,24 +48,7 @@ export default function Skills(){
         </div>
       </div>
       <div id="skills-body-container">
-        <div id="body-1">
-          <div id="skill-1">
-            <div id="skill-1-head">
-              <div id="skill-1-head-title">
-                JavaScript
-              </div>
-              <div id="skill-1-head-percent">
-                80%
-              </div>
-            </div>
-            <div className="bar">
-              <div className="color-bar" id="color-bar-1"></div>
-            </div>
-          </div>
-        </div>
-        <div id="body-2">
-
-        </div>
+        {skillsHtml}
       </div>
     </div>
   );
