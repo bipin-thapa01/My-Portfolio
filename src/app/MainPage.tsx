@@ -1,5 +1,6 @@
 import AboutPage from './AboutPage';
 import Skills from './Skills';
+import Resume from './Resume';
 import './MainPage.css';
 
 export default function MainPage() {
@@ -15,6 +16,7 @@ export default function MainPage() {
       </div>
       <AboutPage />
       <Skills />
+      <Resume />
     </>
   );
 }

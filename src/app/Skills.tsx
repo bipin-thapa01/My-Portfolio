@@ -23,7 +23,7 @@ export default function Skills(){
 
   let skillsHtml = skillsArray.map((el,i)=>{
     return(
-      <div id={`skill-${i+1}`} className={'skill'}>
+      <div id={`skill-${i+1}`} className={'skill'} key={i+1}>
         <div id={`skill-${i+1}-head`} className="skill-head">
           <div id={`skill-${i+1}-head-title`}>
             {el[0]}
@@ -37,7 +37,7 @@ export default function Skills(){
         </div>
       </div>
     );
-  })
+  });
 
   return(
     <div id="skills-container">

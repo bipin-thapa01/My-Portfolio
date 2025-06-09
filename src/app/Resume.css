@@ -1,0 +1,26 @@
+#resume-container{
+  margin-left: 300px;
+  padding: 60px 0;
+}
+
+#resume-head{
+  padding: 0 20px;
+}
+
+#resume-head-title{
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#resume-head-title::before{
+  container: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #149ddd;
+  left: 0;
+  bottom: 0;
+}
