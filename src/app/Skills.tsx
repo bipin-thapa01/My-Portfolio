@@ -38,6 +38,7 @@ export default function Skills(){
       </div>
     );
   });
+//for commit check
 
   return(
     <div id="skills-container">
