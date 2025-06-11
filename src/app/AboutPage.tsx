@@ -42,7 +42,7 @@ export default function AboutPage() {
                 <span id='list-content-title'>Age:</span> 19
               </div>
               <div className='about-page-details'>
-                <span id='list-content-title'>Degree:</span> Bacheor(Ongoing)
+                <span id='list-content-title'>Degree:</span> Bachelor(Ongoing)
               </div>
               <div className='about-page-details'>
                 <span id='list-content-title'>Email:</span> yukichin638@gmail.com

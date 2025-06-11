@@ -16,11 +16,15 @@
 }
 
 #resume-head-title::before{
-  container: "";
+  content: "";
   position: absolute;
   width: 50px;
   height: 3px;
   background-color: #149ddd;
   left: 0;
   bottom: 0;
+}
+
+#resume-body{
+  padding: 0 20px;
 }
